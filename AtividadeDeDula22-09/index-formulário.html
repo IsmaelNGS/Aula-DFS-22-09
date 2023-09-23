@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+</head>
+
+<!-- Elementos de formulário 
+Recebe os dados do usuário e manda para o servidor ( banco de dados )
+é possivel validar os dados 
+
+tag: *form <-  tabula os dados * *label <- descreve o input -->
+
+<body>
+    
+    
+    <!-- Pesquisar: 
+        Atributo METHOD: "get"; "post";
+    -->
+    
+
+    
+        <!-- 1 e 2 Criando e atribuindo formulário-->
+        <h2>Formulário</h2>
+    
+    <form action="register.php" method="post">
+        <div>
+            <label>Nome:</label>
+            <input type="text">
+        </div>
+
+            <label>Naturalidade</label><br>
+            <input type="text" size="20" placeholder="digite aqui">
+
+        <div>
+            <label for="age">Idade</label>
+        <input type="text" name="age">
+        </div>
+
+        <!-- 05 envio -->
+        <input type="submit" value="Enviar"><br><br>
+
+
+        <!-- ** 06 ** -->
+
+        <label for="job">Selecione uma profissão</label>
+        <select name="job">
+            <option value="programador">Programador</option>
+            <option value="tester">Teste</option>
+            <option value="devops">DevOps</option>
+        </select>
+        <br><hr>
+
+        <!-- ** 07 ** | Lista com scroll de seleção  -->
+
+        <div>
+            <label for="contract">Você leu o contrato:</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="não" selected>Não</option>
+            </select>
+        </div>
+        <br><hr>
+
+
+        <!-- 08 | Lista sem rolagem de seleção--> 
+        <div>
+            <label for="items">Selecione os itens desejados:</label>
+            <select name="items" multiple>
+                <option value="arroz">Arroz</option>
+                <option value="feijao">Feijão</option>
+                <option value="cd">CD</option>
+                <option value="dvd">DVD</option>
+            </select>
+        </div>
+        <br><hr>
+
+        <!-- 09 | Cria um campo de texto para o usuario digitar-->
+
+        <div>
+            <label for="comment">Escreva um comentário</label>
+            <textarea name="comment" placeholder="digite aqui !"></textarea>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+    
+
+
+
+    
+</body>
+</html>
